@@ -1,0 +1,77 @@
+.Title {
+    font-size: 44px;
+    font-weight: 1000;
+    line-height: 62px;
+    margin: 10px 0;
+    padding-left: 70px;
+    position: relative;
+}
+.Name {
+    color: var(--active-color);
+    text-transform: uppercase;
+    &::after {
+        background-color: var(--active-color);
+        border-radius: 10px;
+        content: '';
+        height: 4px;
+        left: 0;
+        position: absolute;
+        top: 30px;
+        width: 40px;
+    }
+}
+.Desc {
+    display: block;
+    font-size: 3rem;
+    line-height: 35px;
+    margin: 15px 0;
+    text-align: justify;
+    font-style: normal;
+}
+.Hover {
+    width: 100px;
+    &:hover {
+        .Slide {
+            left: 0%;
+        }
+        .SlideName {
+            transform: translateX(-65px);
+        }
+    }
+    display: inline-block;
+    margin-right: 150px;
+}
+.Slide {
+    background-color: var(--active-color);
+    border-radius: 35px;
+    display: flex;
+    height: 100%;
+    left: -69%;
+    top: 0;
+    flex-direction: row-reverse;
+    padding-right: 17px;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+.Icon {
+    position: absolute;
+    right: 22px;
+    font-size: 2rem;
+}
+.SlideName {
+    color: white;
+    text-align: end;
+    position: absolute;
+    transform: translateX(-22px);
+    top: 14px;
+    z-index: 2;
+    transition: all 0.25s ease-in-out;
+    font-size: 1.8rem;
+}
+.About {
+    transform: translateX(8px);
+}

@@ -1,0 +1,37 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0;
+    position: relative;
+    color: #fff;
+    word-spacing: -10px;
+}
+
+.Component {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.Title {
+    color: var(--active-color);
+}
+.SubComponent {
+    color: hsla(0, 0%, 100%, 0.07);
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .Component {
+        font-size: 35px;
+    }
+    .SubComponent {
+        font-size: 65px;
+    }
+}

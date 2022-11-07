@@ -1,0 +1,42 @@
+.Wrapper {
+    padding: 0 30px;
+    color: white;
+}
+.TabList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.TabItem {
+    background-color: var(--noactive-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 30px 15px;
+    padding: 7.5px 11.25px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    &.active {
+        background-color: var(--active-color);
+    }
+    &:hover {
+        background-color: var(--active-color);
+    }
+}
+
+.Project {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+.ProjectItem {
+}
+.ProjectName {
+}

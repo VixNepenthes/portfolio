@@ -1,0 +1,51 @@
+.Wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+.Container {
+    position: absolute;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.ColorBlock {
+    background-color: #ffb400;
+    height: 200%;
+    left: -83%;
+    position: fixed;
+    top: -50%;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    width: 100%;
+}
+
+.ImageBlock {
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.Image {
+    background-image: url('../../assets/images/avatar.jpg');
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+    max-height: 100%;
+    aspect-ratio: 7/10;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    width: 400px;
+    padding: 0 30px;
+}
+.Text {
+    display: flex;
+    padding-left: 70px;
+    width: 60%;
+    align-items: center;
+}
