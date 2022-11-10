@@ -53,7 +53,12 @@ function Info() {
                         <FontAwesomeIcon icon={faFacebook} />
                     </div>
                 </a>
-                <a href="https://www.messenger.com/t/quydai0612" className={cx('LinkWrapper')} target="_blank">
+                <a
+                    href="https://www.messenger.com/t/quydai0612"
+                    className={cx('LinkWrapper')}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <div className={cx('LinkIcon')}>
                         <FontAwesomeIcon icon={faFacebookMessenger} />
                     </div>
