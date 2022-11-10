@@ -119,3 +119,28 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 1120px) {
+    .Wrapper {
+        margin-bottom: 96px;
+    }
+    .ProjectItem {
+        padding: 12% 0;
+        width: calc(50% - 26px);
+    }
+}
+@media (max-width: 768px) {
+    .TabList {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .TabItem {
+        padding: 12px 0;
+        text-align: center;
+        width: calc(50% - 16px);
+    }
+    .ProjectItem {
+        padding: 28% 0;
+        width: 100%;
+    }
+}

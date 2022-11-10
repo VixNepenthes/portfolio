@@ -50,3 +50,37 @@
     width: 60%;
     align-items: center;
 }
+
+@media (max-width: 1120px) {
+    .Wrapper {
+        height: auto;
+        margin: 61px 0 96px;
+        overflow: initial;
+    }
+    .Container {
+        display: block;
+        padding: 0;
+        position: static;
+    }
+    .ColorBlock {
+        display: none;
+    }
+    .ImageBlock {
+        height: 300px;
+        margin: auto;
+        padding: 0;
+        width: 300px;
+    }
+    .Image {
+        border-radius: 50%;
+    }
+    .Text {
+        margin: auto;
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .Text {
+        width: 90%;
+    }
+}

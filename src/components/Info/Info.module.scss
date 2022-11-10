@@ -16,8 +16,7 @@
     margin-bottom: 20px;
     flex-grow: 3;
 }
-.Content {
-}
+
 .Icon {
     color: var(--active-color);
     font-size: 2.5rem;
@@ -62,7 +61,26 @@
     }
 }
 .LinkIcon {
-    display: block;
     font-size: 2rem;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1120px) {
+    .Wrapper {
+        margin-bottom: 46px;
+    }
+}
+@media (max-width: 768px) {
+    .LinkWrapper {
+        width: 70px;
+        height: 70px;
+    }
+    .Link {
+        justify-content: space-evenly;
+    }
+    .LinkIcon {
+        font-size: 3.5rem;
+    }
 }

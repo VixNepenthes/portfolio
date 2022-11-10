@@ -11,3 +11,12 @@
 .Value {
     font-size: 3rem;
 }
+
+@media (max-width: 768px) {
+    .Value {
+        font-size: 2rem;
+    }
+    .Count {
+        font-size: 4rem;
+    }
+}

@@ -4,3 +4,15 @@
     width: 80%;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .Wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .Wrapper {
+        display: block;
+    }
+}

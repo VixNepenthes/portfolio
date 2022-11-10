@@ -21,33 +21,35 @@ function Text() {
                 Chào mọi người. Mình là Vĩ, hiện là sinh viên năm thứ n của PTIT. Đây là Project đầu tay về ReactJs của
                 mình sau 3 tháng học HTML, CSS và ReactJs. Cảm ơn mọi người đã vào xem trang này
             </p>
-            <div className={cx('Hover')}>
-                <Button
-                    to={routesConfig.projects}
-                    className={cx('Btn')}
-                    onClick={() => {
-                        value.setIsActive(1);
-                    }}
-                >
-                    <div className={cx('Slide')}>
-                        <FontAwesomeIcon icon={faAngleRight} className={cx('Icon')} />
-                    </div>
-                    <div className={cx('SlideName')}>Projects</div>
-                </Button>
-            </div>
-            <div className={cx('Hover')}>
-                <Button
-                    to={routesConfig.projects}
-                    className={cx('Btn')}
-                    onClick={() => {
-                        value.setIsActive(2);
-                    }}
-                >
-                    <div className={cx('Slide')}>
-                        <FontAwesomeIcon icon={faAngleRight} className={cx('Icon')} />
-                    </div>
-                    <div className={cx('SlideName', 'About')}>About</div>
-                </Button>
+            <div className={cx('WrapBtn')}>
+                <div className={cx('Hover')}>
+                    <Button
+                        to={routesConfig.projects}
+                        className={cx('Btn')}
+                        onClick={() => {
+                            value.setIsActive(1);
+                        }}
+                    >
+                        <div className={cx('Slide')}>
+                            <FontAwesomeIcon icon={faAngleRight} className={cx('Icon')} />
+                        </div>
+                        <div className={cx('SlideName')}>Projects</div>
+                    </Button>
+                </div>
+                <div className={cx('Hover')}>
+                    <Button
+                        to={routesConfig.about}
+                        className={cx('Btn')}
+                        onClick={() => {
+                            value.setIsActive(2);
+                        }}
+                    >
+                        <div className={cx('Slide')}>
+                            <FontAwesomeIcon icon={faAngleRight} className={cx('Icon')} />
+                        </div>
+                        <div className={cx('SlideName', 'About')}>About</div>
+                    </Button>
+                </div>
             </div>
         </div>
     );

@@ -21,8 +21,7 @@
     min-width: 40px;
     width: 40px;
 }
-.Content {
-}
+
 .Time {
     background-color: var(--toggle-color);
     border-radius: 20px;
@@ -37,4 +36,18 @@
 }
 .Desc {
     font-size: 2rem;
+}
+@media (max-width: 1120px) {
+    .Wrapper {
+        margin-bottom: 96px;
+    }
+    .Container {
+        display: block;
+    }
+    .EduMoment {
+        width: auto;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
 }

@@ -75,3 +75,32 @@
 .About {
     transform: translateX(8px);
 }
+
+@media (max-width: 1120px) {
+    .Title {
+        padding: 0;
+        text-align: center;
+    }
+    .Name {
+        &::after {
+            display: none;
+        }
+    }
+    .Hover {
+        position: relative;
+        flex: 1;
+        width: 10px;
+    }
+    .WrapBtn {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .Title {
+        font-size: 3rem;
+        line-height: normal;
+        padding: 0;
+        text-align: center;
+    }
+}

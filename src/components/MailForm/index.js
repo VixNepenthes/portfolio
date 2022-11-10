@@ -65,7 +65,7 @@ function MailForm() {
                             Yêu cầu điền đủ
                         </p>
                     </div>
-                    <div className={cx('Email', 'Relative')}>
+                    <div className={cx('Mail', 'Relative')}>
                         <input
                             type="text"
                             name="email"

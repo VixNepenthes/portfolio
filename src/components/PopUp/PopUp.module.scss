@@ -123,3 +123,22 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .Container {
+        display: block;
+        height: 90vh;
+        overflow-y: auto;
+        padding-bottom: 62px;
+    }
+    .XBtn {
+        right: 0;
+        top: 0;
+    }
+    .ProjectSlide {
+        width: 100%;
+    }
+    .ProjectDetails {
+        width: 100%;
+    }
+}

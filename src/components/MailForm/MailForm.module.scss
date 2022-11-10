@@ -96,3 +96,18 @@
     transition: all 0.25s ease-in-out;
     font-size: 1.8rem;
 }
+@media (max-width: 1120px) {
+    .Wrapper {
+        margin-bottom: 96px;
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .Content {
+        display: block;
+    }
+    .Mail,
+    .Name {
+        width: 100%;
+    }
+}
