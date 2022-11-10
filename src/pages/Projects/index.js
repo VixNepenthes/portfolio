@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import Header from '../../components/Header';
 import classNames from 'classnames/bind';
 import style from './Projects.module.scss';
-import PopUp from '../../components/PopUp';
 import TabMenu from '../../components/TabMenu';
 
 const cx = classNames.bind(style);

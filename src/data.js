@@ -1,5 +1,3 @@
-import { faAllergies } from '@fortawesome/free-solid-svg-icons';
-
 export const projects = [
     {
         id: 1,

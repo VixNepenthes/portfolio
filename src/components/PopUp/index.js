@@ -8,12 +8,9 @@ import 'swiper/css';
 import { Navigation, EffectFade } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import portfolio from '../../assets/images/portfolio.png';
-import { projects } from '../../data';
 const cx = classNames.bind(style);
 
 function PopUp({ active, remove, project }) {
-    const images = project.img;
     return (
         <div className={cx('Wrapper', { active })}>
             <div className={cx('Flex')}>

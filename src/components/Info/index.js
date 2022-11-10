@@ -43,7 +43,12 @@ function Info() {
                 </div>
             </div>
             <div className={cx('Link')}>
-                <a href="https://facebook.com/quydai0612" className={cx('LinkWrapper')} target="_blank">
+                <a
+                    href="https://facebook.com/quydai0612"
+                    className={cx('LinkWrapper')}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <div className={cx('LinkIcon')}>
                         <FontAwesomeIcon icon={faFacebook} />
                     </div>
@@ -53,7 +58,12 @@ function Info() {
                         <FontAwesomeIcon icon={faFacebookMessenger} />
                     </div>
                 </a>
-                <a href="https://github.com/VixNepenthes" className={cx('LinkWrapper')} target="_blank">
+                <a
+                    href="https://github.com/VixNepenthes"
+                    className={cx('LinkWrapper')}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <div className={cx('LinkIcon')}>
                         <FontAwesomeIcon icon={faGithub} />
                     </div>

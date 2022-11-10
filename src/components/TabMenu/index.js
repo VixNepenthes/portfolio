@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 import style from './TabMenu.module.scss';
 import { tags, projects } from '../../data';
 import React, { useState, useEffect } from 'react';
-import portfolio from '../../assets/images/portfolio.png';
 import PopUp from '../PopUp';
 const cx = classNames.bind(style);
 
