@@ -5,7 +5,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { edu } from '../../data';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
 import 'animate.css/animate.compat.css';
 
 const cx = classNames.bind(style);

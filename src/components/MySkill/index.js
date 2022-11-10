@@ -14,8 +14,8 @@ function MySkill() {
         <div className={cx('Skill')} ref={refRef}>
             {logo.map((item, index) => (
                 <ScrollAnimation
-                    animateIn={index % 2 == 0 ? 'lightSpeedInLeft' : 'lightSpeedInRight'}
-                    animateOut={index % 2 == 0 ? 'lightSpeedOutLeft' : 'lightSpeedOutRight'}
+                    animateIn={index % 2 === 0 ? 'lightSpeedInLeft' : 'lightSpeedInRight'}
+                    animateOut={index % 2 === 0 ? 'lightSpeedOutLeft' : 'lightSpeedOutRight'}
                     duration={0.6}
                     className={cx('Wrapper')}
                     key={index}
