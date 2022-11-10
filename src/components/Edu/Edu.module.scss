@@ -1,0 +1,40 @@
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.EduMoment {
+    display: flex;
+    margin-bottom: 45px;
+    position: relative;
+    width: 50%;
+}
+.Icon {
+    align-items: center;
+    background-color: #ffb400;
+    background-color: var(--active-color);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-right: 16px;
+    min-width: 40px;
+    width: 40px;
+}
+.Content {
+}
+.Time {
+    background-color: var(--toggle-color);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1px 10px;
+}
+.Name {
+    font-size: 2.5rem;
+    margin: 12px 0;
+    text-transform: uppercase;
+}
+.Desc {
+    font-size: 2rem;
+}

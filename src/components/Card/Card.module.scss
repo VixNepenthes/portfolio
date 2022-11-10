@@ -1,0 +1,13 @@
+.Wrapper {
+    border: 1px solid var(--toggle-color);
+    margin: 16px;
+    padding: 20px 30px 25px 40px;
+    width: calc(50% - 32px);
+}
+.Count {
+    color: var(--active-color);
+    font-size: 5rem;
+}
+.Value {
+    font-size: 3rem;
+}

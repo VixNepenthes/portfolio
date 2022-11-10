@@ -12,18 +12,19 @@ import portfolio from '../../assets/images/portfolio.png';
 import { projects } from '../../data';
 const cx = classNames.bind(style);
 
-function PopUp({ header, img }) {
+function PopUp({ active, remove, project }) {
+    const images = project.img;
     return (
-        <div className={cx('Wrapper')}>
+        <div className={cx('Wrapper', { active })}>
             <div className={cx('Flex')}>
                 <div className={cx('Container')}>
-                    <div className={cx('XBtn')}>
+                    <div className={cx('XBtn')} onClick={remove}>
                         <Button>
                             <FontAwesomeIcon icon={faXmark} />
                         </Button>
                     </div>
                     <div className={cx('ProjectSlide')}>
-                        <header className={cx('Header')}></header>
+                        <header className={cx('Header')}>{project.name}</header>
                         <div>
                             <Swiper
                                 modules={[Navigation, EffectFade]}
@@ -34,17 +35,40 @@ function PopUp({ header, img }) {
                                 loop
                                 className={cx('Swiper')}
                             >
-                                <SwiperSlide className={cx('SwipersSlide')}>
-                                    <img src={portfolio} alt="Portfolio" />
-                                </SwiperSlide>
-                                <SwiperSlide className={cx('SwipersSlide')}>
-                                    <img src={portfolio} alt="Portfolio" />
-                                </SwiperSlide>
-                                <SwiperSlide className={cx('SwipersSlide')}>
-                                    <img src={portfolio} alt="Portfolio" />
-                                </SwiperSlide>
+                                {project.img.map((item, index) => (
+                                    <SwiperSlide className={cx('SwipersSlide')} key={index}>
+                                        <img className={cx('SlideImg')} src={item} alt="Portfolio" />
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
                         </div>
+                    </div>
+                    <div className={cx('ProjectDetails')}>
+                        <header className={cx('Header')}>{project.fullname || 'null'}</header>
+                        <p className={cx('Desc')}>{project.desc}</p>
+                        <ul>
+                            <li className={cx('SubDesc')}>
+                                Created:
+                                <span className={cx('DescData')}>{project.created || 'null'}</span>
+                            </li>
+                            <li className={cx('SubDesc')}>
+                                Role:
+                                <span className={cx('DescData')}>{project.role || 'null'}</span>
+                            </li>
+
+                            <li className={cx('SubDesc')}>
+                                Frontend:
+                                <span className={cx('DescData')}>{project.frontend || 'null'}</span>
+                            </li>
+                            <li className={cx('SubDesc')}>
+                                Backend:
+                                <span className={cx('DescData')}>{project.backend || 'null'}</span>
+                            </li>
+                            <li className={cx('SubDesc')}>
+                                Demo:
+                                <span className={cx('DescData')}>{project.demo || 'null'}</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

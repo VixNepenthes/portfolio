@@ -1,0 +1,28 @@
+.Skill {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Wrapper {
+    margin-bottom: 32px;
+    text-align: center;
+    width: 25%;
+}
+.Img {
+    align-items: center;
+    background-color: var(--toggle-color);
+    border-radius: 50%;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    margin: auto auto 16px;
+    transition: all 0.5s ease;
+    width: 120px;
+}
+.Logo {
+    width: 50%;
+}
+.Title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

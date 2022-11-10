@@ -13,7 +13,7 @@ function Projects() {
             className={cx('Wrapper')}
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ y: window.innerHeight, transition: { duration: 0.25 } }}
+            exit={{ y: window.innerHeight, transition: { duration: 0.5 } }}
         >
             <Header name="My Project" shadow="Works" />
             <TabMenu />
